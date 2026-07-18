@@ -30,3 +30,14 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+
+# 编译产物
+*.exe
+*.log
+# 本地配置、密钥
+config/app.yaml
+# IDE缓存
+.idea/
+.vscode/
+
