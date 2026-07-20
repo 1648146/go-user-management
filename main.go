@@ -1,10 +1,19 @@
+// @title 用户管理后端API
+// @version 1.0
+// @description 实现用户注册、登录接口调试
+// @host 127.0.0.1:8080
+// @BasePath /
+
 package main
 
 import (
 	"go-user-management/controller"
 	"go-user-management/dao"
+	_ "go-user-management/docs"
 
 	"github.com/gin-gonic/gin"
+	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
@@ -20,6 +29,7 @@ func main() {
 
 	// 初始化Gin路由
 	r := gin.Default()
+	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	userGroup := r.Group("/user")
 	{
 		userGroup.POST("/register", controller.RegisterHandler)

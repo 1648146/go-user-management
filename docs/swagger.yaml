@@ -1,0 +1,9 @@
+basePath: /
+host: 127.0.0.1:8080
+info:
+  contact: {}
+  description: 实现用户注册、登录接口调试
+  title: 用户管理后端API
+  version: "1.0"
+paths: {}
+swagger: "2.0"
