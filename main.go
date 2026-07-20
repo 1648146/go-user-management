@@ -11,7 +11,7 @@ import (
 
 func main() {
 	// 修改为你本地MySQL密码
-	dsn := "root:你的mysql密码@tcp(127.0.0.1:3306)/go_user_system?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:111222@tcp(127.0.0.1:3306)/go_user_system?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic("数据库连接失败，请检查密码与数据库是否创建")
