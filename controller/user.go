@@ -14,7 +14,19 @@ type RegisterReq struct {
 	Email    string `json:"email"`
 }
 
-// RegisterHandler 注册接口
+// LoginReq 登录请求参数
+type LoginReq struct {
+	Username string `json:"username"`
+	Password string `json:"password"`
+}
+
+// @Summary 用户注册
+// @Tags 用户模块
+// @Accept json
+// @Produce json
+// @Param body body controller.RegisterReq true "注册入参"
+// @Success 200 {object} map[string]interface{}
+// @Router /user/register [post]
 func RegisterHandler(c *gin.Context) {
 	var req RegisterReq
 	if err := c.ShouldBindJSON(&req); err != nil {
@@ -30,6 +42,14 @@ func RegisterHandler(c *gin.Context) {
 }
 
 // LoginHandler 登录接口
+// Login 用户登录
+// @Summary 用户登录
+// @Tags 用户模块
+// @Accept json
+// @Produce json
+// @Param body body controller.LoginReq true "登录入参"
+// @Success 200 {object} map[string]interface{}
+// @Router /user/login [post]
 func LoginHandler(c *gin.Context) {
 	var req struct {
 		Username string `json:"username"`
