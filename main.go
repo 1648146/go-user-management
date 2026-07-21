@@ -1,6 +1,6 @@
-// @title 用户管理后端API
+// @title 项目接口文档
 // @version 1.0
-// @description 实现用户注册、登录接口调试
+// @description 服务API说明
 // @host 127.0.0.1:8080
 // @BasePath /
 

@@ -41,8 +41,6 @@ func RegisterHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"msg": "注册成功"})
 }
 
-// LoginHandler 登录接口
-// Login 用户登录
 // @Summary 用户登录
 // @Tags 用户模块
 // @Accept json

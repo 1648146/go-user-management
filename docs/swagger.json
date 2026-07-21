@@ -1,8 +1,8 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "实现用户注册、登录接口调试",
-        "title": "用户管理后端API",
+        "description": "服务API说明",
+        "title": "项目接口文档",
         "contact": {},
         "version": "1.0"
     },

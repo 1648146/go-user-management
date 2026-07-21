@@ -122,9 +122,10 @@ var SwaggerInfo = &swag.Spec{
 	Host:             "127.0.0.1:8080",
 	BasePath:         "/",
 	Schemes:          []string{},
-	Title:            "用户管理后端API",
-	Description:      "实现用户注册、登录接口调试",
+	Title:            "项目接口文档",
+	Description:      "服务API说明",
 	InfoInstanceName: "swagger",
+	SwaggerTemplate:  docTemplate,
 }
 
 func init() {
